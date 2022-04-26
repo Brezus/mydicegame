@@ -1,0 +1,63 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="start-btn-cont">
+            <button id="startGame" class="startGame">Start</button>
+        </div>
+        
+        <div class="dice-game-body">
+            <div class="dice-game-wrapper">
+                <h1 id="message">Player 1 Turn</h1>
+            <div class="players">
+                <div id="player1">
+                    <h1>Score: 
+                        <span id="player1Scoreboard">0</span>
+                    </h1>
+                    <div class="scene">
+                        <div class="cube one is-spinning" id="player1Dice">
+                            <div class="cube__face cube__face--front "><div class="die"></div></div>
+                            <div class="cube__face cube__face--back "><div class="die"></div><div class="die"></div></div>
+                            <div class="cube__face cube__face--right "><div class="die"></div><div class="die"></div><div class="die"></div></div>
+                            <div class="cube__face cube__face--left "><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div></div>
+                            <div class="cube__face cube__face--top "><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div></div>
+                            <div class="cube__face cube__face--bottom "><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div></div>
+                        </div>
+                        <p id="dice-value1" class='dice-val'>yea</p>
+                    </div>
+                </div>
+
+                <div id="player2">
+                    <h1>Score: 
+                        <span id="player2Scoreboard">0</span>
+                    </h1>
+                    <div class="scene" >
+                        <div class="cube one is-spinning" id="player2Dice">
+                            <div class="cube__face cube__face--front "><div class="die"></div></div>
+                            <!-- one side die -->
+                            <div class="cube__face cube__face--back "><div class="die"></div><div class="die"></div></div>
+                            <!-- two side die -->
+                            <div class="cube__face cube__face--right "><div class="die"></div><div class="die"></div><div class="die"></div></div>
+                            <!-- three side die -->
+                            <div class="cube__face cube__face--left "><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div></div>
+                            <!-- four side die -->
+                            <div class="cube__face cube__face--top "><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div></div>
+                            <!-- five side die -->
+                            <div class="cube__face cube__face--bottom "><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div></div>
+                            <!-- six side die -->
+                        </div>
+                        <p id="dice-value2" class='dice-val'>yea</p>
+                </div>
+            </div>
+
+            <button id="rollBtn">Roll Dice 🎲</button>
+            <button id="resetBtn">Reset Game 🔁</button>
+            </div>     
+        </div>
+        <audio id="myAudio">
+            <source src="centuries-8-bit.mp3" type="audio/mp3">
+        </audio>
+        <script src="index.pack.js"></script>
+    </body>
+</html>
